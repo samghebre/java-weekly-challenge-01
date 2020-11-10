@@ -58,6 +58,7 @@ public class BasicArrayUtilsTest {
 
     @Test
     public void reverseArrayTest() {
+
         // Given
         String[] input = {"The", "quick", "brown"};
         String[] expected = {"brown", "quick", "The"};

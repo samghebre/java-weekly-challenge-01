@@ -6,7 +6,11 @@ public class IntegerUtils {
      * @return the sum of all integers between 0 and not including `n`
      */
     public static Integer getSumOfN(Integer n) {
-        return null;
+        Integer n1 = n;
+        Integer n2 = n;
+        Integer sum = 0;
+        sum = n1 + n2;
+        return sum;
     }
 
     /**
@@ -14,7 +18,12 @@ public class IntegerUtils {
      * @return integer with identical digits in the reverse order
      */
     public static Integer reverseDigits(Integer val) {
-        return null;
+        Integer reversedNum = 0;
+        while (val > 0) {
+            reversedNum = reversedNum * 10 + val % 10;
+            val = val / 10;
+        }
+        return reversedNum;
     }
 
     /**
@@ -22,6 +31,12 @@ public class IntegerUtils {
      * @return true if the integer is even and false if it is not even.
      */
     public static Boolean isEven(Integer val) {
-        return null;
+        boolean value = true;
+        if (val % 2 == 0) {
+            value = true;
+        } else {
+            value = false;
+        }
+        return value;
     }
 }

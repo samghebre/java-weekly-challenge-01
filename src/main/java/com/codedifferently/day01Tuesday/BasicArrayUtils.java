@@ -1,5 +1,6 @@
 package com.codedifferently.day01Tuesday;
 
+
 public class BasicArrayUtils {
     /**
      * @param stringArray an array of String objects
@@ -23,7 +24,6 @@ public class BasicArrayUtils {
      */
     public static String[] reverse(String[] stringArray) {
        for(int i =0; i <= stringArray.length/2; i++) {
-
         String temp =  stringArray[i];
         stringArray[i] = stringArray[stringArray.length - i -1];
         stringArray[stringArray.length - i -1] = temp;
